@@ -15,7 +15,18 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior: (to) => to.hash ? { el: to.hash, behavior: 'smooth' } : { top: 0 },
+  scrollBehavior: (to) => {
+    if (!to.hash) return { top: 0, left: 0 }
+
+    const target = document.querySelector(to.hash)
+    if (!target) return { top: 0, left: 0 }
+
+    return {
+      top: target.getBoundingClientRect().top + window.scrollY - 24,
+      left: 0,
+      behavior: 'smooth',
+    }
+  },
 })
 
 router.afterEach((to) => {
