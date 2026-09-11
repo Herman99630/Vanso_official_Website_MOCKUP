@@ -13,8 +13,8 @@ const open = ref(false)
       <button class="menu-button" aria-label="Toggle navigation" @click="open = !open">{{ open ? '×' : '☰' }}</button>
       <nav :class="['nav-links', { open }]" aria-label="Primary navigation">
         <RouterLink to="/about" @click="open = false">About</RouterLink>
-        <a href="#blog" @click="open = false">Blog</a>
-        <a href="#help" @click="open = false">Help</a>
+        <span class="nav-placeholder" title="Blog is planned for a later phase">Blog</span>
+        <RouterLink to="/download#help" @click="open = false">Help</RouterLink>
       </nav>
       <div class="nav-actions">
         <span class="language">◎ EN⌄</span>
