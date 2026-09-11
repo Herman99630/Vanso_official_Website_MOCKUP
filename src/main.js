@@ -12,7 +12,11 @@ const routes = [
   { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
 ]
 
-const router = createRouter({ history: createWebHistory(), routes, scrollBehavior: () => ({ top: 0 }) })
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+  scrollBehavior: (to) => to.hash ? { el: to.hash, behavior: 'smooth' } : { top: 0 },
+})
 
 router.afterEach((to) => {
   document.title = to.meta.title
