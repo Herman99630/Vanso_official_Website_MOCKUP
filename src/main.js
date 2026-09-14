@@ -4,12 +4,17 @@ import App from './App.vue'
 import HomePage from './views/HomePage.vue'
 import AboutPage from './views/AboutPage.vue'
 import DownloadPage from './views/DownloadPage.vue'
+import HelpPage from './views/HelpPage.vue'
+import GettingStartedPage from './views/GettingStartedPage.vue'
 import './styles.css'
+import './help.css'
 
 const routes = [
-  { path: '/', component: HomePage, meta: { title: 'Vanso — AI Music Creation & Distribution', description: 'Create original AI music in the Vanso app, publish your songs and reach listeners.' } },
-  { path: '/about', component: AboutPage, meta: { title: 'About Vanso — AI Music Creation, Publishing & Discovery', description: 'Learn how Vanso connects AI music creation, publishing, intelligent distribution and listener feedback.' } },
+  { path: '/', component: HomePage, meta: { title: 'Vanso — Create, Publish & Distribute AI Music', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },
+  { path: '/about', component: AboutPage, meta: { title: 'About Vanso — AI Music Creation, Publishing & Distribution', description: 'Learn what Vanso is, who it is for and how it connects AI music creation, publishing, distribution and listening in one platform.' } },
   { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
+  { path: '/help', component: HelpPage, meta: { title: 'Vanso Help Center', description: 'Find answers about creating, publishing and managing your AI music on Vanso, plus account, rights and troubleshooting help.' } },
+  { path: '/help/getting-started-with-vanso', component: GettingStartedPage, meta: { title: 'Getting Started with Vanso | Vanso Help', description: 'New to Vanso? Learn the basics of accessing the app, creating music and publishing your first track.' } },
 ]
 
 const router = createRouter({
