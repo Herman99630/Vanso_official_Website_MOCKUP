@@ -39,7 +39,7 @@ const features = [
 
     <section class="mission section">
       <img src="/assets/light2.png" alt="Spotlights illuminating a music creator" />
-      <div><span class="eyebrow">EXPRESSION ABOVE ALL</span><h2>Music the World</h2><p>Vanso is dedicated to democratizing music distribution. We believe in a future where every creator—whether using instruments or algorithms—has a stage.</p><RouterLink class="text-link" to="/about">Discover our story →</RouterLink></div>
+      <div><span class="eyebrow">EXPRESSION ABOVE ALL</span><h2>Music the World</h2><p>Vanso is dedicated to democratizing music distribution. We believe in a future where every creator—whether using instruments or algorithms—has a stage.</p><p>We bridge the gap between creators and the massive potential of mobile ecosystem listeners, building native experiences that make music discovery feel effortless for hundreds of millions of users.</p><RouterLink class="text-link" to="/about">Discover our story →</RouterLink></div>
     </section>
     <SiteFooter />
   </main>
