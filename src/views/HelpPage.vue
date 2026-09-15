@@ -18,7 +18,7 @@ const categories = [
     <SiteHeader />
     <section class="help-hero section-glow">
       <span class="eyebrow">VANSO HELP CENTER</span>
-      <h1>How can we help?</h1>
+      <h1>How Can We Help?</h1>
       <p>Find answers about creating, publishing and managing your AI music on Vanso.</p>
       <label class="help-search"><span>⌕</span><input type="search" placeholder="Search Help articles…" aria-label="Search Help articles" disabled /></label>
       <small>Search will be enabled when Help Center content is connected.</small>
@@ -35,7 +35,7 @@ const categories = [
       </div>
     </section>
 
-    <section class="help-note section"><div class="container"><span class="eyebrow">OFFICIAL GUIDANCE</span><h2>Clear answers, grounded in the product.</h2><p>Vanso Help will grow with practical guidance for creators and listeners. New articles will be added only after each workflow and policy has been confirmed.</p></div></section>
+    <section class="help-note section"><div class="container"><span class="eyebrow">OFFICIAL GUIDANCE</span><h2>Clear Answers, Grounded In The Product.</h2><p>Vanso Help will grow with practical guidance for creators and listeners. New articles will be added only after each workflow and policy has been confirmed.</p></div></section>
     <SiteFooter />
   </main>
 </template>
