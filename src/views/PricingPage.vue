@@ -13,7 +13,16 @@ const plans = [
 <template>
   <main class="page pricing-page">
     <SiteHeader />
-    <section class="pricing-hero section-glow"><span class="eyebrow">VANSO AI MUSIC PLANS</span><h1>Choose Your Vanso Plan</h1><p>Compare plans for creating original AI music, publishing your songs and reaching listeners with Vanso. Each standard song uses 40 credits.</p></section>
+    <section class="pricing-hero section-glow">
+      <span class="eyebrow">VANSO AI MUSIC PLANS</span>
+      <h1>Choose Your Vanso Plan</h1>
+      <p>Compare plans for creating original AI music, publishing your songs and reaching listeners with Vanso.</p>
+      <div class="credit-equation" aria-label="One standard song uses 40 credits">
+        <span>1 Standard Song</span>
+        <b>=</b>
+        <strong>40 Credits</strong>
+      </div>
+    </section>
 
     <section class="pricing-content container section">
       <div class="plan-grid">
