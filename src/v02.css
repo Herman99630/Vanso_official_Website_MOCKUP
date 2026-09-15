@@ -58,3 +58,161 @@
 @media (prefers-reduced-motion:reduce) {
   .plan-card { transition:none; }
 }
+
+
+/* Midnight Aurora visual concept */
+:root {
+  --ink:#07070b;
+  --surface:#0d0d14;
+  --surface-raised:#12121a;
+  --aurora-pink:rgba(245,50,138,.14);
+  --aurora-violet:rgba(111,76,202,.13);
+  --aurora-cyan:rgba(84,227,213,.10);
+}
+
+html,body { background:#060609; }
+
+.page {
+  position:relative;
+  background:
+    radial-gradient(ellipse 70% 36% at 4% 4%,var(--aurora-pink),transparent 68%),
+    radial-gradient(ellipse 60% 32% at 96% 24%,var(--aurora-cyan),transparent 70%),
+    radial-gradient(ellipse 52% 30% at 42% 66%,var(--aurora-violet),transparent 72%),
+    linear-gradient(180deg,#07070b 0%,#09080e 44%,#06070a 100%);
+  background-attachment:fixed;
+}
+
+.page::after {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:40;
+  pointer-events:none;
+  opacity:.035;
+  background-image:
+    linear-gradient(rgba(255,255,255,.34) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.24) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.7),transparent 65%);
+}
+
+.nav-shell {
+  background:rgba(10,10,15,.68);
+  border-color:rgba(255,255,255,.11);
+  box-shadow:0 16px 50px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.section-glow::before {
+  width:780px;
+  height:620px;
+  left:-390px;
+  top:-210px;
+  background:linear-gradient(135deg,var(--pink),#8b4cff);
+  opacity:.16;
+  filter:blur(165px);
+}
+
+.section-glow::after {
+  width:720px;
+  height:620px;
+  right:-380px;
+  bottom:-180px;
+  background:linear-gradient(135deg,#4c6fff,var(--cyan));
+  opacity:.12;
+  filter:blur(175px);
+}
+
+.home-hero,.about-hero,.pricing-hero,.help-hero {
+  background:
+    radial-gradient(ellipse 42% 30% at 50% 42%,rgba(255,255,255,.035),transparent 72%),
+    linear-gradient(180deg,rgba(255,255,255,.015),transparent 70%);
+}
+
+.home-hero h1,.about-hero h1,.pricing-hero h1,.download-hero h1 {
+  text-shadow:0 10px 45px rgba(0,0,0,.46);
+}
+
+.feature-card,.three-grid article,.role-grid article,.store-grid article,.help-grid article,.plan-card {
+  border-color:rgba(255,255,255,.09);
+  background:linear-gradient(145deg,rgba(20,20,29,.88),rgba(10,10,15,.74)) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 22px 60px rgba(0,0,0,.17);
+  backdrop-filter:blur(16px);
+}
+
+.feature-card:hover,.three-grid article:hover,.role-grid article:hover,.store-grid article:hover,.help-grid article:hover {
+  border-color:rgba(84,227,213,.32);
+  background:
+    radial-gradient(circle at 85% 0,rgba(84,227,213,.10),transparent 42%),
+    linear-gradient(145deg,rgba(22,22,31,.94),rgba(10,10,15,.8)) !important;
+}
+
+.workflow-section {
+  width:min(1180px,calc(100% - 32px));
+  padding-inline:34px;
+  border:1px solid rgba(255,255,255,.055);
+  border-radius:36px;
+  background:linear-gradient(135deg,rgba(255,255,255,.025),rgba(111,76,202,.04));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.steps::before {
+  border-top:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--pink),#7c5cff,var(--cyan),transparent);
+  opacity:.42;
+}
+
+.mission::after {
+  background:
+    linear-gradient(#07070b 0%,transparent 32%,#06070a 100%),
+    radial-gradient(circle at 50% 65%,transparent 20%,rgba(0,0,0,.48) 78%);
+}
+
+.principles,.ecosystem,.ratings {
+  background:
+    radial-gradient(ellipse 46% 60% at 6% 50%,rgba(245,50,138,.09),transparent 72%),
+    radial-gradient(ellipse 44% 58% at 94% 44%,rgba(84,227,213,.075),transparent 72%),
+    rgba(8,8,13,.68);
+  border-block:1px solid rgba(255,255,255,.045);
+}
+
+.download-cta {
+  background:
+    radial-gradient(circle at 86% 42%,rgba(84,227,213,.14),transparent 35%),
+    radial-gradient(circle at 8% 80%,rgba(245,50,138,.09),transparent 38%),
+    linear-gradient(125deg,rgba(20,20,29,.92),rgba(9,9,14,.92));
+  box-shadow:0 35px 100px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.phone {
+  border-color:rgba(255,255,255,.19);
+  box-shadow:0 38px 110px rgba(0,0,0,.85),0 0 90px rgba(84,227,213,.10),0 0 55px rgba(245,50,138,.10);
+}
+
+.plan-card.popular {
+  border-color:rgba(245,50,138,.72);
+  background:
+    radial-gradient(circle at 76% 0,rgba(245,50,138,.16),transparent 44%),
+    linear-gradient(145deg,rgba(24,17,27,.96),rgba(10,10,15,.86)) !important;
+  box-shadow:0 26px 80px rgba(0,0,0,.25),0 0 45px rgba(245,50,138,.10);
+}
+
+.plan-card:hover {
+  background:
+    radial-gradient(circle at 80% 0,rgba(84,227,213,.13),transparent 44%),
+    linear-gradient(145deg,rgba(22,22,31,.98),rgba(10,10,15,.9)) !important;
+}
+
+.final-cta {
+  background:
+    radial-gradient(ellipse 38% 58% at 50% 48%,rgba(111,76,202,.15),transparent 72%),
+    radial-gradient(ellipse 28% 45% at 35% 54%,rgba(245,50,138,.10),transparent 75%),
+    radial-gradient(ellipse 28% 45% at 66% 48%,rgba(84,227,213,.08),transparent 75%);
+  border-top:1px solid rgba(255,255,255,.045);
+}
+
+@media (max-width:800px) {
+  .page { background-attachment:scroll; }
+  .page::after { background-size:48px 48px; opacity:.025; }
+  .workflow-section { width:calc(100% - 24px); padding-inline:20px; border-radius:28px; }
+}
