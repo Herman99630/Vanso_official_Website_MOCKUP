@@ -40,9 +40,6 @@
 .coming-feature { margin:2px 0 20px; color:#8f8f98; font-size:11px; line-height:1.6; }
 .plan-cta { width:100%; margin-top:auto; pointer-events:none; }
 .pricing-disclaimer { max-width:850px; margin:32px auto 0; color:#64646c; text-align:center; font-size:12px; line-height:1.65; }
-.credit-band { background:radial-gradient(circle at 20% 50%,rgba(245,50,138,.14),transparent 38%),radial-gradient(circle at 80% 50%,rgba(84,227,213,.12),transparent 38%),#070708; text-align:center; }
-.credit-band h2 { margin:0 0 15px; font-size:clamp(36px,5vw,56px); }
-.credit-band p { max-width:730px; margin:0 auto; color:var(--muted); line-height:1.75; }
 .pricing-faq { max-width:920px; }
 .plan-static-cta { pointer-events:none; }
 
