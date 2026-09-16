@@ -61,7 +61,36 @@ const reviewsBottom = [
       </div>
     </section>
 
-    <section class="ecosystem section"><div class="container"><div class="section-heading"><h2>Two Ways To Add Music. One Place To Track It.</h2><p>Create new AI music in the mobile app or upload an existing finished track from the web. Creator Studio brings the available performance data together.</p></div><div class="three-grid ecosystem-grid"><article class="mobile-product-card"><div class="inline-product-screen"><img src="/assets/app-screens/song-details.jpg" alt="Vanso mobile song details screen for editing a generated track" /></div><small>MOBILE APP</small><h3>Create, Publish & Edit</h3><p>Generate original AI music, choose whether to publish it, and update supported details such as the cover and description from your phone.</p></article><article><small>WEB UPLOAD</small><h3>Upload Existing Music</h3><p>Already have a finished track? Add it independently through Creator Studio without using the mobile creation flow.</p></article><article><small>CREATOR STUDIO</small><h3>Track All Your Music</h3><p>View available performance data for music created in the app as well as tracks uploaded from the web.</p></article></div></div></section>
+    <section class="ecosystem section">
+      <div class="container">
+        <div class="section-heading platform-path-heading">
+          <span class="eyebrow">ONE CONNECTED MUSIC JOURNEY</span>
+          <h2>Two Ways To Add Music. One Place To Track It.</h2>
+          <p>Create new AI music in the mobile app or upload an existing finished track from the web. Both paths connect to Creator Studio insights.</p>
+        </div>
+        <div class="platform-path" aria-label="Vanso mobile creation and web upload paths connecting to Creator Studio">
+          <article class="path-card path-app">
+            <small>MOBILE APP</small>
+            <h3>Create New AI Music</h3>
+            <p>Turn an idea into an original song, edit supported details and choose when to publish.</p>
+            <ul><li>AI music creation</li><li>Mobile editing</li><li>Publish to Vanso</li></ul>
+          </article>
+          <article class="path-card path-web">
+            <small>WEB UPLOAD</small>
+            <h3>Add A Finished Track</h3>
+            <p>Upload existing music as a separate option without using the mobile creation flow.</p>
+            <ul><li>Audio and cover art</li><li>Description and lyrics</li><li>Publish as a Drop</li></ul>
+          </article>
+          <div class="path-connector" aria-hidden="true"><span></span><b>+</b><span></span><i>→</i></div>
+          <article class="path-card path-studio">
+            <small>CREATOR STUDIO</small>
+            <h3>Track All Your Music</h3>
+            <p>View available performance data across music created in the app and tracks uploaded from the web.</p>
+            <div class="insight-tags"><span>Plays</span><span>Likes & Saves</span><span>Followers</span><span>Profile Views</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section container web-upload-showcase">
       <div class="section-heading studio-showcase-heading">
