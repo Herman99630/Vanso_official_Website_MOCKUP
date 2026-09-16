@@ -71,7 +71,7 @@ const reviewsBottom = [
       </div>
       <div class="studio-showcase-grid">
         <figure class="studio-shot studio-shot-upload">
-          <img src="/assets/app-screens/creator-upload.png" alt="Vanso Creator Studio New Drop page for uploading music, artwork, descriptions and lyrics on the web" />
+          <img src="/assets/app-screens/creator-upload.webp" alt="Vanso Creator Studio New Drop page for uploading music, artwork, descriptions and lyrics on the web" />
           <figcaption><span>WEB</span><div><h3>Upload A Finished Track</h3><p>Add the audio, choose its language, upload cover art and include the story and lyrics behind your music.</p></div></figcaption>
         </figure>
       </div>
@@ -85,11 +85,11 @@ const reviewsBottom = [
       </div>
       <div class="studio-showcase-grid">
         <figure class="studio-shot studio-shot-dashboard">
-          <img src="/assets/app-screens/creator-dashboard.png" alt="Vanso Creator Studio dashboard showing total plays, likes, saves and a recent published track" />
+          <img src="/assets/app-screens/creator-dashboard.webp" alt="Vanso Creator Studio dashboard showing total plays, likes, saves and a recent published track" />
           <figcaption><span>OVERVIEW</span><div><h3>Your Music At A Glance</h3><p>Review total plays, likes, saves and recent Drops from one clear dashboard.</p></div></figcaption>
         </figure>
         <figure class="studio-shot studio-shot-statistics">
-          <img src="/assets/app-screens/creator-statistics.png" alt="Vanso Creator Studio statistics showing plays, interactions, followers and profile views" />
+          <img src="/assets/app-screens/creator-statistics.webp" alt="Vanso Creator Studio statistics showing plays, interactions, followers and profile views" />
           <figcaption><span>INSIGHTS</span><div><h3>Follow Audience Response</h3><p>Explore plays, interactions, new followers and profile views as your audience grows.</p></div></figcaption>
         </figure>
       </div>
