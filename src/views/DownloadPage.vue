@@ -1,6 +1,8 @@
 <script setup>
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteFooter from '../components/SiteFooter.vue'
+import ProductIcon from '../components/ProductIcon.vue'
+import '../download-balance.css'
 
 const googleUrl = 'https://play.google.com/store/apps/details?id=com.vanso.music'
 const appleUrl = 'https://apps.apple.com/sg/app/vanso/id6760441874'
@@ -112,12 +114,16 @@ const reviewsBottom = [
       <div class="container heard-layout">
         <div class="heard-copy">
           <span class="eyebrow">FROM CREATION TO CONNECTION</span>
-          <h2>AI Music Made To Be Heard</h2>
-          <p>Creating a song is only the beginning. Publish your music on Vanso and connect it with listeners who can discover, play and engage with your work.</p>
-          <p>From personal ideas to finished songs, Vanso brings AI music creation and music discovery together in one connected experience.</p>
+          <h2>AI Music Made<br />To Be Heard</h2>
+          <p>Publish your AI music on Vanso so listeners can discover, play, save and comment on your songs.</p>
         </div>
-        <div class="heard-path" aria-label="The Vanso music journey from an idea to listener engagement">
-          <span>Your Idea</span><i>→</i><span>AI Music</span><i>→</i><span>Personalize</span><i>→</i><span>Publish</span><i>→</i><span>Plays & Engagement</span>
+        <div class="listener-art" role="img" aria-label="Illustration of a published song connecting with plays, saves and comments">
+          <div class="listener-ring" aria-hidden="true"></div>
+          <svg class="listener-lines" viewBox="0 0 500 360" fill="none" aria-hidden="true"><path d="M250 180 Q320 80 390 55 M250 180 Q360 170 420 210 M250 180 Q180 290 120 300" stroke="currentColor" stroke-width="1.5" /></svg>
+          <div class="listener-song"><div class="listener-cover"><ProductIcon name="music" /><div class="listener-wave" aria-hidden="true"><i v-for="n in 20" :key="n" :style="{height:(16+n*13%49)+'px'}"></i></div></div><small>PUBLISHED ON VANSO</small><strong>Your Original Song</strong></div>
+          <div class="listener-feedback feedback-play"><ProductIcon name="headphones" /><span>Plays</span><div class="feedback-wave" aria-hidden="true"><i v-for="n in 9" :key="n" :style="{height:(6+n*7%20)+'px'}"></i></div></div>
+          <div class="listener-feedback feedback-save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4V3Z" /></svg><span>Saves</span></div>
+          <div class="listener-feedback feedback-comment"><ProductIcon name="comment" /><span>Comments</span></div>
         </div>
       </div>
     </section>
@@ -131,18 +137,10 @@ const reviewsBottom = [
     </section>
 
     <section class="section container mobile-studio-bridge">
-      <div class="bridge-card">
-        <div>
-          <span class="eyebrow">BUILT FOR MOBILE CREATION</span>
-          <h2>Create, Edit And Publish From Your Phone</h2>
-          <p>Create original AI music in the Vanso App, edit supported details and choose when to publish. Your music stays connected to your Vanso account.</p>
-        </div>
-        <aside>
-          <small>ALREADY HAVE A FINISHED TRACK?</small>
-          <h3>Continue With Creator Studio</h3>
-          <p>Upload existing music from the web and view available performance data for music connected to your account.</p>
-          <a class="text-link" :href="creatorStudioUrl">Open Creator Studio →</a>
-        </aside>
+      <div class="studio-info-strip">
+        <svg class="studio-info-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="38" height="27" rx="4" /><path d="M24 34v7m-9 0h18M13 26v-6m8 6V15m8 11v-8m8 8V12" /></svg>
+        <div><h2>Your Music, Connected On The Web</h2><p>View available performance data for your published music, whether created in the app or uploaded from the web. You can also upload finished tracks through Creator Studio.</p></div>
+        <a class="button ghost" :href="creatorStudioUrl">Open Creator Studio <span aria-hidden="true"> →</span></a>
       </div>
     </section>
 
