@@ -63,6 +63,24 @@ const reviewsBottom = [
 
     <section class="ecosystem section"><div class="container"><div class="section-heading"><h2>Create And Edit On Mobile. Upload And Track On The Web.</h2><p>The Vanso app and Creator Studio support different parts of your music journey.</p></div><div class="three-grid ecosystem-grid"><article class="mobile-product-card"><div class="inline-product-screen"><img src="/assets/app-screens/song-details.jpg" alt="Vanso mobile song details screen for editing a generated track" /></div><small>MOBILE APP</small><h3>Create, Publish & Edit</h3><p>Generate original AI music, choose whether to publish it, and update supported details such as the cover and description from your phone.</p></article><article><small>CREATOR STUDIO</small><h3>Upload & View Data</h3><p>Upload existing music from the web and view available performance data for your published tracks.</p></article><article><small>VANSO LISTENING ECOSYSTEM</small><h3>Reach Listeners</h3><p>Help published music reach listeners and receive plays, likes, saves and comments through Vanso’s discovery experience.</p></article></div></div></section>
 
+    <section class="section container studio-showcase">
+      <div class="section-heading studio-showcase-heading">
+        <span class="eyebrow">CREATOR STUDIO</span>
+        <h2>See How Your Music Connects.</h2>
+        <p>Use Creator Studio on the web to review published tracks and understand how listeners are responding to your music.</p>
+      </div>
+      <div class="studio-showcase-grid">
+        <figure class="studio-shot studio-shot-dashboard">
+          <img src="/assets/app-screens/creator-dashboard.png" alt="Vanso Creator Studio dashboard showing total plays, likes, saves and a recent published track" />
+          <figcaption><span>01</span><div><h3>Your Music At A Glance</h3><p>Review total plays, likes, saves and recent Drops from one clear dashboard.</p></div></figcaption>
+        </figure>
+        <figure class="studio-shot studio-shot-statistics">
+          <img src="/assets/app-screens/creator-statistics.png" alt="Vanso Creator Studio statistics showing plays, interactions, followers and profile views" />
+          <figcaption><span>02</span><div><h3>Follow Audience Response</h3><p>Explore plays, interactions, new followers and profile views as your audience grows.</p></div></figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="help" class="section container faq"><div class="section-heading"><h2>Vanso App FAQs</h2></div><details open><summary>Where Can I Download The Official Vanso App?</summary><p>Use the official Google Play and Apple App Store links on this page.</p></details><details><summary>Is Vanso Available On iOS And Android?</summary><p>Yes. Vanso is available for iPhone and Android devices.</p></details><details><summary>What Can I Do With The Vanso Mobile App?</summary><p>Create original AI music, choose whether to publish it, and edit supported details such as the cover and description.</p></details><details><summary>Can I Use Vanso On The Web?</summary><p>Yes. Creator Studio supports uploading existing music and viewing available performance data on the web.</p></details></section>
 
     <section class="final-cta section"><span class="eyebrow">CREATE • PUBLISH • CONNECT</span><h2>Ready To Create With Vanso?</h2><p>Start with an idea. Turn it into music. See where your song can go.</p><div><a class="button" :href="googleUrl">Get it on Google Play</a><a class="button ghost" :href="appleUrl">Download on the App Store</a></div></section>

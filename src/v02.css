@@ -284,6 +284,26 @@ html,body { background:#060609; }
 .inline-product-screen img { width:100%; height:100%; object-fit:cover; object-position:top; }
 .mobile-product-card h3 { margin-top:20px!important; }
 
+.studio-showcase { padding-top:120px; }
+.studio-showcase-heading { max-width:760px; }
+.studio-showcase-grid { display:grid; gap:32px; margin-top:54px; }
+.studio-shot {
+  position:relative;
+  margin:0;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:28px;
+  background:linear-gradient(145deg,rgba(19,19,28,.92),rgba(8,8,13,.92));
+  box-shadow:0 34px 100px rgba(0,0,0,.36),inset 0 1px 0 rgba(255,255,255,.04);
+}
+.studio-shot::before { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; box-shadow:inset 0 0 90px rgba(0,0,0,.28); }
+.studio-shot img { display:block; width:100%; height:auto; }
+.studio-shot figcaption { position:relative; z-index:2; display:grid; grid-template-columns:56px 1fr; gap:22px; align-items:start; padding:30px 34px 34px; border-top:1px solid rgba(255,255,255,.08); }
+.studio-shot figcaption > span { display:grid; width:48px; height:48px; place-items:center; border:1px solid rgba(84,227,213,.32); border-radius:14px; color:var(--cyan); background:rgba(84,227,213,.06); font-size:12px; font-weight:800; }
+.studio-shot h3 { margin:0 0 8px; font-size:24px; }
+.studio-shot p { max-width:720px; margin:0; color:var(--muted); font-size:14px; line-height:1.7; }
+.studio-shot-statistics { width:94%; margin-left:auto; }
+
 @media (max-width:800px) {
   .hero-product-device { width:min(286px,78vw); transform:none; }
   .has-product-screens article { min-height:auto; }
@@ -291,4 +311,11 @@ html,body { background:#060609; }
   .flow-screen-stack img { width:47%; height:auto; max-height:390px; }
   .mobile-product-card { min-height:auto!important; }
   .inline-product-screen { height:470px; }
+  .studio-showcase { padding-top:90px; }
+  .studio-showcase-grid { gap:22px; margin-top:36px; }
+  .studio-shot,.studio-shot-statistics { width:100%; }
+  .studio-shot { border-radius:18px; }
+  .studio-shot figcaption { grid-template-columns:44px 1fr; gap:14px; padding:22px 18px 24px; }
+  .studio-shot figcaption > span { width:40px; height:40px; border-radius:12px; }
+  .studio-shot h3 { font-size:20px; }
 }
