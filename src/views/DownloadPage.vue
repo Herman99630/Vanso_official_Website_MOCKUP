@@ -70,13 +70,17 @@ const reviewsBottom = [
         <p>Use Creator Studio on the web to review published tracks and understand how listeners are responding to your music.</p>
       </div>
       <div class="studio-showcase-grid">
+        <figure class="studio-shot studio-shot-upload">
+          <img src="/assets/app-screens/creator-upload.png" alt="Vanso Creator Studio New Drop page for uploading music, artwork, descriptions and lyrics on the web" />
+          <figcaption><span>01</span><div><h3>Upload From The Web</h3><p>Add an existing track, choose its language, upload cover art and include the story and lyrics behind your music.</p></div></figcaption>
+        </figure>
         <figure class="studio-shot studio-shot-dashboard">
           <img src="/assets/app-screens/creator-dashboard.png" alt="Vanso Creator Studio dashboard showing total plays, likes, saves and a recent published track" />
-          <figcaption><span>01</span><div><h3>Your Music At A Glance</h3><p>Review total plays, likes, saves and recent Drops from one clear dashboard.</p></div></figcaption>
+          <figcaption><span>02</span><div><h3>Your Music At A Glance</h3><p>Review total plays, likes, saves and recent Drops from one clear dashboard.</p></div></figcaption>
         </figure>
         <figure class="studio-shot studio-shot-statistics">
           <img src="/assets/app-screens/creator-statistics.png" alt="Vanso Creator Studio statistics showing plays, interactions, followers and profile views" />
-          <figcaption><span>02</span><div><h3>Follow Audience Response</h3><p>Explore plays, interactions, new followers and profile views as your audience grows.</p></div></figcaption>
+          <figcaption><span>03</span><div><h3>Follow Audience Response</h3><p>Explore plays, interactions, new followers and profile views as your audience grows.</p></div></figcaption>
         </figure>
       </div>
     </section>

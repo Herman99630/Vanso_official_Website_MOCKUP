@@ -302,7 +302,8 @@ html,body { background:#060609; }
 .studio-shot figcaption > span { display:grid; width:48px; height:48px; place-items:center; border:1px solid rgba(84,227,213,.32); border-radius:14px; color:var(--cyan); background:rgba(84,227,213,.06); font-size:12px; font-weight:800; }
 .studio-shot h3 { margin:0 0 8px; font-size:24px; }
 .studio-shot p { max-width:720px; margin:0; color:var(--muted); font-size:14px; line-height:1.7; }
-.studio-shot-statistics { width:94%; margin-left:auto; }
+.studio-shot-upload,.studio-shot-statistics { width:94%; }
+.studio-shot-dashboard { width:94%; margin-left:auto; }
 
 @media (max-width:800px) {
   .hero-product-device { width:min(286px,78vw); transform:none; }
@@ -313,7 +314,7 @@ html,body { background:#060609; }
   .inline-product-screen { height:470px; }
   .studio-showcase { padding-top:90px; }
   .studio-showcase-grid { gap:22px; margin-top:36px; }
-  .studio-shot,.studio-shot-statistics { width:100%; }
+  .studio-shot,.studio-shot-upload,.studio-shot-dashboard,.studio-shot-statistics { width:100%; }
   .studio-shot { border-radius:18px; }
   .studio-shot figcaption { grid-template-columns:44px 1fr; gap:14px; padding:22px 18px 24px; }
   .studio-shot figcaption > span { width:40px; height:40px; border-radius:12px; }
