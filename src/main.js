@@ -12,7 +12,7 @@ import './help.css'
 import './v02.css'
 
 const routes = [
-  { path: '/', component: HomePage, meta: { title: 'Vanso — Create, Publish & Distribute AI Music', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },
+  { path: '/', component: HomePage, meta: { title: 'Vanso — Create AI Music, Publish On Vanso & Reach Listeners', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },
   { path: '/about', component: AboutPage, meta: { title: 'About Vanso — AI Music Creation, Publishing & Distribution', description: 'Learn what Vanso is, who it is for and how it connects AI music creation, publishing, distribution and listening in one platform.' } },
   { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
   { path: '/pricing', component: PricingPage, meta: { title: 'Vanso Pricing — AI Music Plans from Free to Pro', description: 'Compare Vanso AI music plans, monthly credits, song generation limits and commercial use options. Start free or choose the right plan for your music.' } },
