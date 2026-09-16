@@ -2,6 +2,7 @@
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import ProductIcon from '../components/ProductIcon.vue'
+import '../home-art.css'
 
 const songs = [
   ['Midnight City Remix', '8.1k', '1.9k'], ['Neon Nights', '6.8k', '1.3k'],
@@ -21,7 +22,18 @@ const features = [
       <span class="eyebrow">AI MUSIC, MADE AND SHARED</span>
       <h1>Turn Your AI Music<br />Into Global Hits.<br /><span>Reach 400M+<br class="desktop-break" /> Listeners.</span></h1>
       <div class="hero-actions"><RouterLink class="button" to="/download">Get the App</RouterLink><a class="button ghost" href="https://vanso.ai/main/home">Open Creator Studio</a></div>
-      <p>From idea to audience — create original tracks in the Vanso app,<br />publish on Vanso and let listeners discover it.</p></div><div class="product-device home-proof-device"><img src="/assets/app-screens/create-simple.jpg" alt="Vanso App Simple mode: describe an idea to create AI music" /></div>
+      <p>From idea to audience — create original tracks in the Vanso app,<br />publish on Vanso and let listeners discover it.</p></div><div class="home-music-art" role="img" aria-label="Concept illustration: an idea for the drive home becomes a song and reaches listeners">
+        <div class="home-sound-orbit orbit-one" aria-hidden="true"></div><div class="home-sound-orbit orbit-two" aria-hidden="true"></div>
+        <div class="home-inspiration-note"><span>IT STARTS WITH AN IDEA</span><strong>“A song for the<br />drive home.”</strong></div>
+        <div class="home-record">
+          <div class="home-cover-art">
+            <svg viewBox="0 0 360 360" fill="none" aria-hidden="true"><defs><linearGradient id="home-sky" x1="180" y1="0" x2="180" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#293653"/><stop offset=".55" stop-color="#b26f99"/><stop offset="1" stop-color="#f5b58f"/></linearGradient><linearGradient id="home-road" x1="180" y1="180" x2="180" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#574266"/><stop offset="1" stop-color="#182536"/></linearGradient></defs><path fill="url(#home-sky)" d="M0 0h360v360H0z"/><circle cx="246" cy="116" r="47" fill="#ffd9ae"/><path d="M0 203 62 153 160 218 276 163 360 201v159H0Z" fill="#554968"/><path d="m0 247 86-63 100 56 106-18 68 32v106H0Z" fill="#29374d"/><path d="M169 219h12l103 141H64Z" fill="url(#home-road)"/><path d="m178 237 3 10m2 9 7 22m7 18 16 52" stroke="#f0cab0" stroke-width="3"/><path d="m168 221-86 139m100-139 85 139" stroke="#9facc8" stroke-opacity=".6"/><path d="M24 24h36M24 24v36m312-36h-36m36 0v36" stroke="white" stroke-opacity=".35"/></svg>
+            <span>VANSO / ORIGINAL SOUND</span><strong>The Long<br />Way Home</strong>
+          </div>
+          <div class="home-record-caption"><span>FROM IMAGINATION TO MUSIC</span><div class="home-record-wave" aria-hidden="true"><i v-for="n in 34" :key="n" :style="{height: (7+n*11%27)+'px',animationDelay:n*.06+'s'}"></i></div></div>
+        </div>
+        <div class="home-listening-note"><ProductIcon name="headphones" /><span>Made To<br /><strong>Be Heard.</strong></span></div>
+      </div>
     </section>
 
     <section class="ticker" aria-label="Song showcase layout preview"><p class="showcase-note container">Song showcase preview · Verified creator stories and audio coming next.</p><div class="ticker-track">
