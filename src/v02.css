@@ -346,3 +346,60 @@ html,body { background:#060609; }
   .studio-shot figcaption > span { width:40px; height:40px; border-radius:12px; }
   .studio-shot h3 { font-size:20px; }
 }
+
+/* Download conversion-first refresh */
+.download-hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 18px; }
+.hero-device-composition { position:relative; width:440px; height:620px; margin:auto; }
+.hero-device-composition .hero-product-device { position:absolute; top:24px; margin:0; }
+.hero-device-back { left:18px; width:258px; transform:rotate(-7deg); opacity:.72; filter:saturate(.82) brightness(.78); }
+.hero-device-front { right:16px; z-index:2; width:286px; transform:rotate(4deg); }
+.download-store-section { padding-top:72px; }
+.download-benefits { padding-top:120px; }
+.benefit-grid article { min-height:330px; }
+.benefit-grid b { width:58px; height:58px; font-size:16px; border-radius:17px; }
+.benefit-grid h3 { margin-top:58px; font-size:23px; }
+.benefit-grid p { font-size:14px; line-height:1.75; }
+
+.heard-section {
+  overflow:hidden;
+  border-block:1px solid rgba(255,255,255,.06);
+  background:
+    radial-gradient(ellipse 42% 80% at 10% 50%,rgba(245,50,138,.12),transparent 72%),
+    radial-gradient(ellipse 42% 80% at 90% 50%,rgba(84,227,213,.11),transparent 72%),
+    rgba(7,7,12,.78);
+}
+.heard-layout { display:grid; grid-template-columns:.86fr 1.14fr; gap:80px; align-items:center; }
+.heard-copy h2,.bridge-card h2 { margin:0 0 18px; font-size:clamp(34px,4.5vw,56px); letter-spacing:-.05em; line-height:1.06; }
+.heard-copy p { max-width:620px; margin:0 0 15px; color:var(--muted); font-size:15px; line-height:1.75; }
+.heard-path { position:relative; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:13px; min-height:290px; padding:46px 38px; border:1px solid rgba(255,255,255,.09); border-radius:28px; background:radial-gradient(circle at 50% 50%,rgba(111,76,202,.12),transparent 62%),rgba(10,10,16,.72); box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 28px 80px rgba(0,0,0,.25); }
+.heard-path span { padding:13px 16px; border:1px solid rgba(255,255,255,.11); border-radius:999px; color:#d9d9df; background:rgba(255,255,255,.035); font-size:12px; font-weight:750; white-space:nowrap; }
+.heard-path span:nth-of-type(2),.heard-path span:nth-of-type(5) { border-color:rgba(84,227,213,.30); background:rgba(84,227,213,.07); }
+.heard-path span:nth-of-type(4) { border-color:rgba(245,50,138,.34); background:rgba(245,50,138,.08); }
+.heard-path i { color:#64646e; font-size:18px; font-style:normal; }
+
+.mobile-studio-bridge { padding-top:120px; }
+.bridge-card { display:grid; grid-template-columns:1.15fr .85fr; gap:28px; padding:30px; border:1px solid rgba(255,255,255,.09); border-radius:30px; background:linear-gradient(135deg,rgba(23,18,29,.88),rgba(8,18,19,.84)); box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 32px 90px rgba(0,0,0,.28); }
+.bridge-card > div { padding:34px 34px 28px; }
+.bridge-card > div p { max-width:610px; margin:0; color:var(--muted); font-size:15px; line-height:1.75; }
+.bridge-card aside { padding:32px; border:1px solid rgba(84,227,213,.19); border-radius:22px; background:radial-gradient(circle at 90% 10%,rgba(84,227,213,.11),transparent 46%),rgba(5,8,11,.62); }
+.bridge-card aside small { color:var(--cyan); font-size:10px; font-weight:800; letter-spacing:.13em; }
+.bridge-card aside h3 { margin:44px 0 12px; font-size:24px; }
+.bridge-card aside p { margin:0; color:var(--muted); font-size:13px; line-height:1.7; }
+
+@media (max-width:800px) {
+  .download-hero-actions { flex-direction:column; align-items:stretch; width:min(100%,360px); margin-inline:auto; }
+  .download-hero small { margin-inline:auto; }
+  .hero-device-composition { width:min(360px,94vw); height:560px; }
+  .hero-device-back { left:5px; width:225px; }
+  .hero-device-front { right:5px; width:252px; }
+  .download-store-section,.download-benefits,.mobile-studio-bridge { padding-top:84px; }
+  .benefit-grid article { min-height:245px; }
+  .heard-layout,.bridge-card { grid-template-columns:1fr; gap:34px; }
+  .heard-copy { text-align:center; }
+  .heard-copy p { margin-inline:auto; }
+  .heard-path { min-height:0; padding:34px 20px; gap:10px; }
+  .heard-path i { transform:rotate(90deg); }
+  .heard-path { flex-direction:column; }
+  .bridge-card { padding:16px; }
+  .bridge-card > div,.bridge-card aside { padding:26px 22px; }
+}
