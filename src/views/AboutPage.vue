@@ -10,7 +10,7 @@ import '../about-visual.css'
 <template>
   <main class="page about-page">
     <SiteHeader />
-    <section class="about-hero section-glow"><span class="eyebrow">ABOUT VANSO</span><h1>What Is Vanso?</h1><p>Vanso is an AI music platform where you can create original songs, publish them and reach listeners — all in one place.</p></section>
+    <section class="about-hero section-glow"><div class="about-intro-heading"><span class="eyebrow">ABOUT VANSO</span><h1>What Is Vanso?</h1></div><p>Vanso is an AI music platform where you can create original songs, publish them and reach listeners — all in one place.</p></section>
 
     <section class="split-section container section"><div><span class="eyebrow pink">WHY WE EXIST</span><h2>Why Vanso Exists</h2><p>Music creation has traditionally required expensive equipment, professional production skills and complex software. Vanso uses generative AI to make music creation more accessible, helping anyone turn an idea, lyric, emotion or story into an original song.</p><p>By bringing AI music creation, publishing and discovery into one platform, Vanso allows more people to express themselves through music—without requiring a professional music background.</p></div><div class="inspiration-art" aria-label="Concept illustration of everyday inspiration becoming music">
       <div class="memory-scene"><div class="memory-sun"></div><div class="memory-hills"></div><span>THE WAY HOME / 7:42 PM</span></div>

@@ -17,14 +17,21 @@ const categories = [
   <main class="page help-page">
     <SiteHeader />
     <section class="help-hero section-glow">
+      <div class="help-hero-copy">
       <span class="eyebrow">VANSO HELP CENTER</span>
       <h1>How Can We Help?</h1>
       <p>Find answers about creating, publishing and managing your AI music on Vanso.</p>
       <label class="help-search"><span>⌕</span><input type="search" placeholder="Search Help articles…" aria-label="Search Help articles" disabled /></label>
       <small>Search will be enabled when Help Center content is connected.</small>
+      </div>
+      <aside class="help-quick-start" aria-label="Help shortcuts">
+        <span class="eyebrow">FIND YOUR WAY</span>
+        <RouterLink to="/help/getting-started-with-vanso">Getting Started <span aria-hidden="true">↗</span></RouterLink>
+        <a href="#help-topics">Browse All Topics <span aria-hidden="true">↓</span></a>
+      </aside>
     </section>
 
-    <section class="section container help-content">
+    <section id="help-topics" class="section container help-content">
       <div class="section-heading"><h2>Explore Vanso Help</h2><p>Choose a topic to understand each part of your Vanso experience.</p></div>
       <div class="help-grid">
         <article v-for="(category, index) in categories" :key="category[1]" :class="{ featured: index === 0 }">

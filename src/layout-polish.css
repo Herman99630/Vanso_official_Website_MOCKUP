@@ -1,0 +1,142 @@
+/* Aurora layout refinement: each page has its own information rhythm. */
+:root { --muted:#b3b0bd; }
+.feature-card p,.three-grid p,.steps p,.scene-grid p,.audience-side p,
+.help-grid p,.studio-info-strip p { color:var(--muted); }
+.pricing-disclaimer,.coming-feature,.plan-audience,.plan-price span,
+.download-hero small,.help-hero small,.coming-soon { color:#a9a6b4; }
+.pricing-disclaimer { font-size:14px; }
+
+/* Keep the sculpture in its grid track even on a 1024px desktop. */
+.home-page .home-hero {
+  grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
+  gap:clamp(36px,4vw,64px);
+}
+.home-hero-copy { width:100%; max-width:580px; }
+.home-page .home-hero h1 { max-width:580px; font-size:clamp(42px,4.7vw,60px); }
+.home-hero-copy p { max-width:480px; margin:22px 0 0; font-size:16px; }
+.home-page .home-sonic-art { width:100%; max-width:530px; margin:0; justify-self:center; }
+.home-hero-copy .hero-actions { gap:12px; }
+.home-hero-copy .button { padding-inline:22px; }
+
+/* An open, asymmetric band breaks up the surrounding card sections. */
+.home-page .workflow-section {
+  width:100%; padding-inline:max(24px,calc((100% - 1120px)/2));
+  display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr); gap:54px;
+  align-items:center; border-radius:0; border-inline:0;
+  background:radial-gradient(ellipse at 5% 50%,#4d285e40,transparent 65%),
+    linear-gradient(110deg,#191322d9,#102426a6);
+  isolation:isolate;
+}
+.home-page .workflow-section::after {
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:-1;
+  background:repeating-linear-gradient(90deg,transparent 0 47px,#b6e4df0c 47px 48px);
+  mask-image:linear-gradient(90deg,transparent,#0008);
+}
+.home-page .workflow-section .section-heading { text-align:left; margin:0; }
+.home-page .workflow-section h2 { font-size:clamp(30px,3vw,40px); }
+.home-page .workflow-section .steps { gap:24px; text-align:left; }
+.home-page .workflow-section .steps i { margin:0 0 22px; }
+.home-page .workflow-section .steps p { margin:0; }
+.home-page .workflow-section .steps::before { left:36px; right:16%; }
+.home-page .mission > img { opacity:.82; filter:brightness(1.13) contrast(1.04); }
+.home-page .mission::after {
+  background:linear-gradient(#07070b 0%,transparent 25%,#06070ad9 100%),
+    radial-gradient(ellipse 42% 46% at 50% 60%,#07070bb8,transparent 100%);
+}
+.home-page .mission p { color:#c0bdc8; font-size:15px; }
+.final-cta { padding-inline:24px; }
+.final-cta h2 { max-width:960px; margin:0 auto 20px; text-wrap:balance; line-height:1.12; }
+
+/* Editorial About opener; the existing story artwork starts much earlier. */
+.about-page .about-hero {
+  min-height:390px; padding:60px max(24px,calc((100% - 1120px)/2)) 48px;
+  display:grid; grid-template-columns:1fr 1fr; gap:64px;
+  align-items:center; text-align:left;
+}
+.about-page .about-hero h1 { font-size:clamp(50px,6vw,76px); line-height:1.08; margin:0; max-width:480px; }
+.about-page .about-hero p { max-width:500px; margin:0; font-size:20px; }
+.about-page .about-hero + .split-section { padding-top:24px; }
+.about-page .three-grid article { min-height:250px; padding:26px; }
+.about-page .three-grid h3 { margin-top:28px; font-size:20px; }
+.about-page .three-grid p { font-size:14px; }
+
+/* Pricing exposes plan names and prices before the 720px fold. */
+.pricing-page .pricing-hero { min-height:330px; padding:44px 24px 32px; }
+.pricing-page .pricing-hero h1 { font-size:clamp(42px,6vw,76px); margin-bottom:16px; }
+.pricing-page .pricing-hero p { max-width:650px; font-size:16px; }
+.pricing-page .credit-equation { margin-top:16px; padding:10px 18px; }
+.pricing-page .pricing-content { padding-top:18px; }
+.pricing-page .plan-audience { margin-bottom:18px; }
+.pricing-page .plan-price { gap:2px; flex-wrap:wrap; }
+
+/* Same devices, a little more light and space below the navigation. */
+.download-page .hero-device-composition { margin-top:16px; }
+.download-page .hero-device-back img { filter:brightness(1.13); }
+.download-page .hero-device-front img { filter:brightness(1.05); }
+.download-page .hero-device-composition .product-device { border-color:#ffffff75; }
+.download-page .section-heading h2,.download-page .final-cta h2 { font-size:clamp(32px,4vw,48px); }
+
+/* Help is a working entry point, with a restrained shortcut column. */
+.help-page .help-hero {
+  min-height:400px; padding:48px max(24px,calc((100% - 1120px)/2));
+  display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);
+  gap:80px; align-items:center; text-align:left;
+}
+.help-hero-copy h1 { font-size:clamp(42px,5vw,64px); line-height:1.12; }
+.help-hero-copy > p { max-width:540px; color:var(--muted); line-height:1.7; margin:0 0 24px; }
+.help-hero-copy > small { display:block; margin-top:12px; font-size:12px; line-height:1.6; }
+.help-search { display:block; }
+.help-search input::placeholder { color:#aaa6b5; }
+.help-quick-start { padding-left:32px; border-left:1px solid #ffffff20; }
+.help-quick-start a { display:flex; justify-content:space-between; gap:16px; padding:19px 0; border-bottom:1px solid #ffffff15; font-size:17px; }
+.help-quick-start a span { color:var(--cyan); }
+.help-quick-start a:hover { color:var(--cyan); }
+.help-page .help-content { padding-top:30px; scroll-margin-top:24px; }
+.help-content .section-heading { text-align:left; margin:0 0 26px; }
+.help-content .section-heading h2 { font-size:30px; }
+.help-content .section-heading p { margin-bottom:0; }
+
+@media (min-width:981px) and (max-width:1100px) {
+  .pricing-page .plan-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+  .pricing-page .plan-card { padding-inline:18px; }
+  .pricing-page .plan-price strong { font-size:40px; }
+  .pricing-page .plan-audience { min-height:62px; }
+}
+@media (min-width:801px) and (max-width:1100px) {
+  .home-page .home-hero h1 { font-size:clamp(38px,4.4vw,48px); }
+  .home-hero-copy .button { font-size:14px; padding-inline:18px; }
+  .home-page .workflow-section { grid-template-columns:1fr; gap:36px; }
+  .home-page .workflow-section .section-heading { max-width:600px; }
+  .download-page .download-hero { gap:24px; grid-template-columns:1fr 1fr; }
+  .download-page .hero-device-composition { width:360px; height:575px; }
+  .download-page .hero-device-back { width:230px; }
+  .download-page .hero-device-front { width:260px; }
+}
+@media (max-width:800px) {
+  .home-page .home-hero { grid-template-columns:minmax(0,1fr); gap:10px; }
+  .home-hero-copy { margin-inline:auto; }
+  .home-page .home-hero h1 { font-size:clamp(36px,8.8vw,58px); margin-inline:auto; }
+  .home-hero-copy p { margin-inline:auto; }
+  .home-page .home-sonic-art { max-width:440px; margin:auto; }
+  .home-page .workflow-section { grid-template-columns:1fr; gap:36px; padding-inline:24px; }
+  .home-page .workflow-section .steps { gap:32px; }
+  .home-page .workflow-section .steps article { padding-left:92px; min-height:100px; }
+  .home-page .workflow-section .steps i { position:absolute; left:0; top:0; width:64px; height:64px; }
+  .home-page .workflow-section .steps b { margin-bottom:10px; }
+  .home-page .workflow-section .steps p { max-width:none; }
+  .about-page .about-hero { min-height:0; grid-template-columns:1fr; gap:24px; padding:46px 24px 40px; }
+  .about-page .about-hero h1 { font-size:clamp(44px,10vw,64px); }
+  .about-page .about-hero p { font-size:18px; }
+  .about-page .three-grid article { min-height:0; }
+  .about-page .three-grid h3 { margin-top:24px; }
+  .pricing-page .pricing-hero { min-height:0; padding:42px 24px 34px; }
+  .pricing-page .pricing-hero h1 { font-size:clamp(38px,8vw,56px); }
+  .help-page .help-hero { min-height:0; grid-template-columns:1fr; gap:26px; padding:42px 24px 32px; }
+  .help-hero-copy h1 { font-size:clamp(38px,8vw,56px); }
+  .help-quick-start { border-left:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 24px; }
+  .help-quick-start .eyebrow { display:none; }
+  .help-quick-start a { font-size:14px; padding:10px 0; }
+  .help-page .help-content { padding-top:22px; }
+  .download-page .hero-device-composition { margin-top:16px; }
+  .final-cta h2 { font-size:clamp(32px,7.5vw,48px); }
+}

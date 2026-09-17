@@ -10,6 +10,7 @@ import PricingPage from './views/PricingPage.vue'
 import './styles.css'
 import './help.css'
 import './v02.css'
+import './layout-polish.css'
 
 const routes = [
   { path: '/', component: HomePage, meta: { title: 'Vanso — Create AI Music, Publish On Vanso & Reach Listeners', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },

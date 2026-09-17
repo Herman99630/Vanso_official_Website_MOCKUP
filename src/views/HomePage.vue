@@ -22,7 +22,7 @@ const features = [
       <span class="eyebrow">AI MUSIC, MADE AND SHARED</span>
       <h1>Turn Your AI Music<br />Into Global Hits.<br /><span>Reach 400M+<br class="desktop-break" /> Listeners.</span></h1>
       <div class="hero-actions"><RouterLink class="button" to="/download">Get the App</RouterLink><a class="button ghost" href="https://vanso.ai/main/home">Open Creator Studio</a></div>
-      <p>From idea to audience — create original tracks in the Vanso app,<br />publish on Vanso and let listeners discover it.</p></div><div class="home-sonic-art"><img src="/assets/sonic-sculpture-v1.webp" width="1254" height="1254" fetchpriority="high" alt="Abstract sculptural sound ribbon with iridescent glass and metallic folds" /></div>
+      <p>From idea to audience — create original tracks in the Vanso app, publish on Vanso and let listeners discover it.</p></div><div class="home-sonic-art"><img src="/assets/sonic-sculpture-v1.webp" width="1254" height="1254" fetchpriority="high" alt="Abstract sculptural sound ribbon with iridescent glass and metallic folds" /></div>
     </section>
 
     <section class="ticker" aria-label="Song showcase layout preview"><p class="showcase-note container">Song showcase preview · Verified creator stories and audio coming next.</p><div class="ticker-track">
