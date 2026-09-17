@@ -1,20 +1,7 @@
-.home-page .home-hero{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:44px}
-.home-music-art{position:relative;isolation:isolate;width:100%;aspect-ratio:440/510;max-width:490px;margin:auto;align-self:center}
-.home-record{position:absolute;top:22%;left:16%;width:76%;transform:rotate(5deg);padding:9px;border-radius:24px;border:1px solid #ffffff29;background:#191925;box-shadow:0 28px 60px #0005;z-index:2}
-.home-cover-art{position:relative;aspect-ratio:1;border-radius:16px;overflow:hidden;background:#413951}
-.home-cover-art svg{display:block;width:100%;height:100%}
-.home-cover-art>span{position:absolute;top:9%;left:9%;font-size:8px;font-weight:800;letter-spacing:.12em;color:#fff}
-.home-cover-art>strong{position:absolute;bottom:9%;left:9%;font-size:clamp(28px,3.2vw,43px);line-height:1.05;color:#fff;letter-spacing:-.04em;text-shadow:0 2px 14px #192236}
-.home-record-caption{padding:15px 9px 9px}.home-record-caption>span{display:block;font-size:8px;letter-spacing:.12em;color:#bfb5cf;margin-bottom:10px}
-.home-record-wave{display:flex;align-items:center;gap:3px;height:34px;overflow:hidden}.home-record-wave i{display:block;flex:1;min-width:2px;max-width:5px;border-radius:4px;background:linear-gradient(#ec9cbb,#7ed4ce);animation:home-wave 3s ease-in-out infinite alternate}
-.home-inspiration-note{position:absolute;top:7%;left:0;width:64%;padding:22px 24px;background:#f1e3d5;color:#3e3040;border-radius:5px 16px 16px 16px;transform:rotate(-8deg);box-shadow:0 14px 35px #0004;z-index:3}
-.home-inspiration-note>span{display:block;font-size:9px;font-weight:800;letter-spacing:.1em;margin-bottom:14px}.home-inspiration-note>strong{font-size:clamp(20px,2vw,27px);line-height:1.25;letter-spacing:-.03em}
-.home-listening-note{position:absolute;bottom:0;right:0;z-index:3;display:flex;align-items:center;gap:13px;padding:16px 22px;border-radius:18px;border:1px solid #ffffff33;background:#19232bef;box-shadow:0 12px 25px #0003}
-.home-listening-note svg{width:36px;height:36px;color:var(--cyan)}.home-listening-note span{font-size:12px;color:#b6c8cb;line-height:1.5}.home-listening-note strong{font-size:18px;color:#fff}
-.home-sound-orbit{position:absolute;top:50%;left:53%;width:82%;aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid #8ec3c535;border-radius:50%;z-index:0;animation:home-orbit 7s ease-out infinite;pointer-events:none}.orbit-two{animation-delay:3.5s;border-color:#b789b32b}
-@keyframes home-wave{from{transform:scaleY(.7)}to{transform:scaleY(1)}}
-@keyframes home-orbit{0%{opacity:0;transform:translate(-50%,-50%) scale(.8)}30%{opacity:.65}100%{opacity:0;transform:translate(-50%,-50%) scale(1.3)}}
-@media(max-width:1000px) and (min-width:801px){.home-page .home-hero{gap:25px}.home-inspiration-note{padding:17px}.home-inspiration-note>span{font-size:7px}.home-listening-note{padding:12px 16px}.home-record-caption{padding:10px 5px 5px}}
-@media(max-width:800px){.home-page .home-hero{grid-template-columns:minmax(0,1fr);gap:22px}.home-music-art{max-width:400px;text-align:left;margin-block:0 16px}.home-cover-art>strong{font-size:36px}.home-inspiration-note>strong{font-size:24px}}
-@media(max-width:380px){.home-cover-art>strong{font-size:30px}.home-inspiration-note{padding:17px}.home-inspiration-note>strong{font-size:21px}.home-listening-note{padding:12px 16px}}
-@media(prefers-reduced-motion:reduce){.home-record-wave i,.home-sound-orbit{animation:none}.home-sound-orbit{opacity:.4}.orbit-two{transform:translate(-50%,-50%) scale(1.18)}}
+/* Conceptual sound sculpture — homepage only */
+.home-page .home-hero{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;isolation:isolate}
+.home-sonic-art{position:relative;width:118%;margin-left:-6%;aspect-ratio:1;align-self:center;pointer-events:none;mix-blend-mode:screen;mask-image:radial-gradient(ellipse at center,#000 52%,transparent 73%)}
+.home-sonic-art img{display:block;width:100%;height:auto;animation:sonic-breathe 14s ease-in-out infinite;transform-origin:center;will-change:transform}
+@keyframes sonic-breathe{0%,100%{transform:translateY(0) rotate(-2deg) scale(.98)}50%{transform:translateY(-9px) rotate(2deg) scale(1.02)}}
+@media(max-width:800px){.home-page .home-hero{grid-template-columns:minmax(0,1fr);gap:0}.home-sonic-art{width:100%;max-width:480px;margin:0 auto;}.home-sonic-art img{animation-duration:18s}}
+@media(prefers-reduced-motion:reduce){.home-sonic-art img{animation:none;will-change:auto}}
