@@ -13,8 +13,8 @@ import './v02.css'
 import './layout-polish.css'
 
 const routes = [
-  { path: '/', component: HomePage, meta: { title: 'Vanso — Create AI Music, Publish On Vanso & Reach Listeners', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },
-  { path: '/about', component: AboutPage, meta: { title: 'About Vanso — AI Music Creation, Publishing & Distribution', description: 'Learn what Vanso is, who it is for and how it connects AI music creation, publishing, distribution and listening in one platform.' } },
+  { path: '/', component: HomePage, meta: { title: 'Vanso | AI Music Generator & Streaming Platform', description: 'Create original songs with AI, publish them on Vanso, and connect with listeners around the world. Create, listen and discover music in one place.' } },
+  { path: '/about', component: AboutPage, meta: { title: 'About Vanso | AI Music Generator & Streaming Platform', description: 'Learn about Vanso, an AI music generator and streaming platform where creators can create and publish original music, and listeners can discover new tracks.' } },
   { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
   { path: '/pricing', component: PricingPage, meta: { title: 'Vanso Pricing — AI Music Plans from Free to Pro', description: 'Compare Vanso AI music plans, monthly credits, song generation limits and commercial use options. Start free or choose the right plan for your music.' } },
   { path: '/help', component: HelpPage, meta: { title: 'Vanso Help Center', description: 'Find answers about creating, publishing and managing your AI music on Vanso, plus account, rights and troubleshooting help.' } },

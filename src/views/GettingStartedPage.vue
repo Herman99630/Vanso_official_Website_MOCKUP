@@ -20,7 +20,7 @@ import SiteFooter from '../components/SiteFooter.vue'
       <h2>3. Publish And Reach Listeners</h2>
       <p>When your song is ready, continue through Vanso’s connected publishing flow so listeners can discover and respond to it.</p>
       <h2>4. Manage Your Music On The Web</h2>
-      <p>Open Creator Studio to review your music, update supported details and follow performance.</p>
+      <p>Open Creator Studio to upload finished tracks and view available performance data for published music created in the app or uploaded from the web.</p>
       <div class="article-actions"><RouterLink class="button ghost" to="/help">Back to Help Center</RouterLink><a class="button" href="https://vanso.ai/main/home">Open Creator Studio</a></div>
     </article>
     <SiteFooter />

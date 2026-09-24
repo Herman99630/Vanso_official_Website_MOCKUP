@@ -5,8 +5,8 @@ import SiteFooter from '../components/SiteFooter.vue'
 const categories = [
   ['✦', 'Getting Started', 'New to Vanso? Start here.'],
   ['♫', 'Creating Music', 'Create original AI tracks in the Vanso app.'],
-  ['↗', 'Publishing & Distribution', 'Turn your tracks into Drops and share them.'],
-  ['◎', 'Managing Your Music', 'Organize and track your published Drops.'],
+  ['↗', 'Publishing Your Music.', 'Publish your tracks on Vanso and make them available for listeners to discover.'],
+  ['◎', 'Managing Your Music', 'Organize and track your published tracks.'],
   ['◇', 'Rights & Safety', 'Learn about usage rights and content guidelines.'],
   ['♙', 'Account & Plans', 'Find help with account settings and plan details.'],
   ['?', 'Troubleshooting', 'Resolve common creation, playback and sign-in issues.'],
