@@ -13,12 +13,12 @@ import './v02.css'
 import './layout-polish.css'
 
 const routes = [
-  { path: '/', component: HomePage, meta: { title: 'Vanso | AI Music Generator & Streaming Platform', description: 'Create original songs with AI, publish them on Vanso, and connect with listeners around the world. Create, listen and discover music in one place.' } },
-  { path: '/about', component: AboutPage, meta: { title: 'About Vanso | AI Music Generator & Streaming Platform', description: 'Learn about Vanso, an AI music generator and streaming platform where creators can create and publish original music, and listeners can discover new tracks.' } },
-  { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
-  { path: '/pricing', component: PricingPage, meta: { title: 'Vanso Pricing — AI Music Plans from Free to Pro', description: 'Compare Vanso AI music plans, monthly credits, song generation limits and commercial use options. Start free or choose the right plan for your music.' } },
-  { path: '/help', component: HelpPage, meta: { title: 'Vanso Help Center', description: 'Find answers about creating, publishing and managing your AI music on Vanso, plus account, rights and troubleshooting help.' } },
-  { path: '/help/getting-started-with-vanso', component: GettingStartedPage, meta: { title: 'Getting Started with Vanso | Vanso Help', description: 'New to Vanso? Learn the basics of accessing the app, creating music and publishing your first track.' } },
+  { path: '/', component: HomePage, meta: {"title": "Vanso | AI Music Creation & Discovery", "description": "Turn everyday ideas into songs with AI. Share your music on Vanso, discover songs from others, and connect through listening, likes, and comments."} },
+  { path: '/about', component: AboutPage, meta: {"title": "About Vanso | Music, Expression & Connection", "description": "Discover Vanso, a music platform for turning everyday ideas into songs with AI, sharing your music, and discovering what others create."} },
+  { path: '/download', component: DownloadPage, meta: {"title": "Download Vanso | Create & Discover AI Music", "description": "Get Vanso for iPhone and Android. Turn everyday ideas into songs with AI, share your music, and discover songs from others."} },
+  { path: '/pricing', component: PricingPage, meta: {"title": "Vanso Pricing | AI Music Creation Plans", "description": "Compare Vanso AI music plans, monthly credits, song generation limits and commercial use options. Start free or choose the right plan for your music."} },
+  { path: '/help', component: HelpPage, meta: {"title": "Vanso Help Center", "description": "Find help with creating and sharing songs, listening to music, and using your Vanso account, plus plans, rights, and troubleshooting."} },
+  { path: '/help/getting-started-with-vanso', component: GettingStartedPage, meta: {"title": "Getting Started With Vanso | Vanso Help", "description": "New to Vanso? Get the app, discover music from others, and learn the basics of creating and sharing your own songs."} },
 ]
 
 const router = createRouter({

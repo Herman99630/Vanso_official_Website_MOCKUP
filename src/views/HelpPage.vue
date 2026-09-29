@@ -5,8 +5,8 @@ import SiteFooter from '../components/SiteFooter.vue'
 const categories = [
   ['✦', 'Getting Started', 'New to Vanso? Start here.'],
   ['♫', 'Creating Music', 'Create original AI tracks in the Vanso app.'],
-  ['↗', 'Publishing Your Music.', 'Publish your tracks on Vanso and make them available for listeners to discover.'],
-  ['◎', 'Managing Your Music', 'Organize and track your published tracks.'],
+  ['↗', 'Publishing Your Music', 'Publish your tracks on Vanso and make them available for listeners to discover.'],
+  ['◎', 'Managing Your Music', 'Get help with song details and see how people listen to and interact with your music.'],
   ['◇', 'Rights & Safety', 'Learn about usage rights and content guidelines.'],
   ['♙', 'Account & Plans', 'Find help with account settings and plan details.'],
   ['?', 'Troubleshooting', 'Resolve common creation, playback and sign-in issues.'],
@@ -20,9 +20,8 @@ const categories = [
       <div class="help-hero-copy">
       <span class="eyebrow">VANSO HELP CENTER</span>
       <h1>How Can We Help?</h1>
-      <p>Find answers about creating, publishing and managing your AI music on Vanso.</p>
+      <p>Find help with creating, sharing, listening, and using your Vanso account.</p>
       <label class="help-search"><span>⌕</span><input type="search" placeholder="Search Help articles…" aria-label="Search Help articles" disabled /></label>
-      <small>Search will be enabled when Help Center content is connected.</small>
       </div>
       <aside class="help-quick-start" aria-label="Help shortcuts">
         <span class="eyebrow">FIND YOUR WAY</span>
@@ -42,7 +41,7 @@ const categories = [
       </div>
     </section>
 
-    <section class="help-note section"><div class="container"><span class="eyebrow">OFFICIAL GUIDANCE</span><h2>Clear Answers, Grounded In The Product.</h2><p>Vanso Help will grow with practical guidance for creators and listeners. New articles will be added only after each workflow and policy has been confirmed.</p></div></section>
+    <section class="help-note section"><div class="container"><span class="eyebrow">OFFICIAL GUIDANCE</span><h2>Make The Most Of Vanso</h2><p>Explore help for creating songs, discovering music, and using your account.</p></div></section>
     <SiteFooter />
   </main>
 </template>

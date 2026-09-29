@@ -19,8 +19,8 @@ const open = ref(false)
       </nav>
       <div class="nav-actions">
         <span class="language">◎ EN⌄</span>
-        <a class="sign-in" href="https://vanso.ai/main/home">Sign in</a>
-        <RouterLink class="button small" to="/download">Get App</RouterLink>
+        <a class="sign-in" href="https://vanso.ai/main/home">Sign In</a>
+        <RouterLink class="button small" to="/download">Get The App</RouterLink>
       </div>
     </div>
   </header>

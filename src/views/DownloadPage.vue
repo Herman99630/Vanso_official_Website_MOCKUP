@@ -32,8 +32,8 @@ const reviewsBottom = [
     <section class="download-hero container section-glow">
       <div>
         <span class="eyebrow">THE VANSO AI MUSIC APP</span>
-        <h1>Create AI Music Wherever Inspiration Finds You.</h1>
-        <p>Turn your ideas into original songs with Vanso. Create, personalize and publish music from your phone, then reach listeners across Vanso’s growing music community.</p>
+        <h1>Turn Your Thoughts Into Songs.<br />Discover Someone Else’s Through Music.</h1>
+        <p>Turn everyday ideas into songs with AI, share your music on Vanso, and discover songs from others. Create, listen, or enjoy a little of both — right from your phone.</p>
         <div class="download-hero-actions">
           <a class="button" :href="appleUrl">Download On The App Store</a>
           <a class="button ghost" :href="googleUrl">Get It On Google Play</a>
@@ -76,20 +76,20 @@ const reviewsBottom = [
     <section class="section container download-benefits">
       <div class="section-heading">
         <span class="eyebrow">WHY VANSO</span>
-        <h2>Three Reasons To Create With Vanso</h2>
+        <h2>Three Ways To Enjoy Vanso</h2>
       </div>
       <div class="three-grid benefit-grid">
-        <article><b>01</b><h3>Turn Ideas Into Original Music</h3><p>Describe an idea, a feeling or a story, and let Vanso transform it into an original AI-generated song.</p></article>
-        <article><b>02</b><h3>Make Every Song Your Own</h3><p>Review your song, then personalize supported details such as its cover art and description before sharing it with listeners.</p></article>
-        <article><b>03</b><h3>Publish And Reach Listeners</h3><p>Publish your music on Vanso and give it the opportunity to receive plays, likes and feedback from listeners.</p></article>
+        <article><b>01</b><h3>Turn Everyday Ideas Into Songs</h3><p>Describe an idea, a feeling or a story, and let Vanso transform it into an original AI-generated song.</p></article>
+        <article><b>02</b><h3>Find Music That Fits Your Day</h3><p>Explore original songs from others and find something for your mood, your downtime, or your next little adventure.</p></article>
+        <article><b>03</b><h3>Connect Over A Song</h3><p>Share your music, save songs you love, and join in with likes and comments.</p></article>
       </div>
     </section>
 
     <section class="section container product-flow-section">
       <div class="section-heading">
         <span class="eyebrow">A MOBILE-FIRST CREATIVE FLOW</span>
-        <h2>From Idea To Song In Minutes</h2>
-        <p>You do not need professional music production experience to start creating. Vanso brings AI music generation, personalization and publishing together in one mobile experience.</p>
+        <h2>From An Idea To Your Own Song</h2>
+        <p>Start with something you want to express. Vanso helps you turn it into music with AI, without needing music production experience.</p>
       </div>
       <div class="three-grid download-steps has-product-screens">
         <article>
@@ -105,7 +105,7 @@ const reviewsBottom = [
         </article>
         <article>
           <div class="flow-single-screen"><img src="/assets/app-screens/song-result.jpg" alt="A finished AI-generated song in the Vanso app" /></div>
-          <b>03</b><h3>Make It Yours And Publish</h3><p>Update supported details such as the cover art and description, then publish when you are ready.</p>
+          <b>03</b><h3>Make It Personal</h3><p>Make the song feel more personal with its cover art and description, and choose whether to share it on Vanso.</p>
         </article>
       </div>
     </section>
@@ -114,8 +114,8 @@ const reviewsBottom = [
       <div class="container heard-layout">
         <div class="heard-copy">
           <span class="eyebrow">FROM CREATION TO CONNECTION</span>
-          <h2>AI Music Made<br />To Be Heard</h2>
-          <p>Publish your AI music on Vanso so listeners can discover, play, save and comment on your songs.</p>
+          <h2>A Song Can Start A Connection</h2>
+          <p>Share a song from your life, then see what catches your ear. Save a new favorite, leave a thoughtful comment, or give a song you believe in a like. Your taste is part of what makes Vanso worth exploring.</p>
         </div>
         <div class="listener-art" role="img" aria-label="Illustration of a published song connecting with plays, saves and comments">
           <div class="listener-ring" aria-hidden="true"></div>
@@ -130,8 +130,8 @@ const reviewsBottom = [
 
     <section class="ratings section">
       <div class="container">
-        <div class="section-heading"><h2>What Creators Are Saying</h2><p>Two-row review layout preview. Final quotes and usernames will be replaced with verified community feedback.</p></div>
-        <div class="review-viewport review-row"><div class="review-track"><article v-for="(review, index) in [...reviewsTop, ...reviewsTop]" :key="`top-${index}`"><b>CREATOR REVIEW</b><p>“{{ review[1] }}”</p><small>{{ review[0] }}</small></article></div></div>
+        <div class="section-heading"><h2>Voices From The Vanso Community</h2><p>Two-row review layout preview. Final quotes and usernames will be replaced with verified community feedback.</p></div>
+        <div class="review-viewport review-row"><div class="review-track"><article v-for="(review, index) in [...reviewsTop, ...reviewsTop]" :key="`top-${index}`"><b>COMMUNITY REVIEW</b><p>“{{ review[1] }}”</p><small>{{ review[0] }}</small></article></div></div>
         <div class="review-viewport review-row"><div class="review-track reverse"><article v-for="(review, index) in [...reviewsBottom, ...reviewsBottom]" :key="`bottom-${index}`"><b>COMMUNITY REVIEW</b><p>“{{ review[1] }}”</p><small>{{ review[0] }}</small></article></div></div>
       </div>
     </section>
@@ -149,14 +149,14 @@ const reviewsBottom = [
       <details open><summary>Is Vanso Available On iOS And Android?</summary><p>Yes. Vanso is available through the Apple App Store and Google Play.</p></details>
       <details><summary>Can I Create AI Music On The Website?</summary><p>Vanso’s AI music creation experience is currently built for the mobile App. Creator Studio on the web supports uploading finished tracks and viewing available performance data.</p></details>
       <details><summary>Do I Need Music Production Experience?</summary><p>No. Vanso is designed to help people turn ideas, emotions and stories into original music without requiring professional production experience.</p></details>
-      <details><summary>What Can I Do After Creating A Song?</summary><p>You can personalize supported details such as the song’s cover art and description, then publish it for listeners to discover and engage with.</p></details>
+      <details><summary>What Can I Do After Creating A Song?</summary><p>You can update details such as the cover art and description, and choose whether to share your song on Vanso for others to discover.</p></details>
       <details><summary>Can I Use The Same Account On Mobile And Web?</summary><p>Yes. Sign in with the same Vanso account to access the available mobile and web features connected to your account.</p></details>
     </section>
 
     <section class="final-cta section">
-      <span class="eyebrow">YOUR NEXT SONG STARTS WITH AN IDEA</span>
-      <h2>Turn Your Next Idea Into Original AI Music</h2>
-      <p>Download Vanso and start creating from your phone.</p>
+      <span class="eyebrow">CREATE • LISTEN • CONNECT</span>
+      <h2>A Little Music For Your Everyday</h2>
+      <p>Get the Vanso app to turn moments into songs and discover music from others.</p>
       <div><a class="button" :href="googleUrl">Get It On Google Play</a><a class="button ghost" :href="appleUrl">Download On The App Store</a></div>
     </section>
     <SiteFooter />
