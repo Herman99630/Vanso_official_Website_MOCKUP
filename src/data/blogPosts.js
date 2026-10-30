@@ -59,9 +59,9 @@ ${figure(step5, 'Sharing a Halloween song through Copy Link, SMS, Facebook, What
 export const readingMinutes = html => Math.max(1, Math.ceil(html.replace(/<[^>]*>/g, ' ').trim().split(/\s+/u).length / 200))
 export const formatDate = value => new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${value}T00:00:00Z`))
 export const blogPosts = [{
- slug: 'make-your-own-ai-halloween-song', featured: true, category: 'Music Card',
- title: 'Trick or Treat? Create Your Own AI Halloween Song with Vanso',
- seoTitle: 'Create Your Own AI Halloween Song | Vanso',
+ slug: 'create-share-your-own-ai-halloween-song', featured: true, category: 'Music Card',
+ title: 'Trick or Treat? Create & Share Your Own AI Halloween Song with Vanso',
+ seoTitle: 'Create & Share Your Own AI Halloween Song | Vanso',
  metaDescription: 'Create a personalized AI Halloween song with Vanso. Turn your message into music, choose your sound, and share a spooky treat friends can play on the web.',
  excerpt: 'A little candy, a little mischief, and a song made for someone special. Meet Music Card, Vanso’s new feature, and create an AI Halloween song to share.',
  author: 'Herman Alexander', publishedAt: '2026-10-30',
