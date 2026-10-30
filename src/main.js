@@ -7,6 +7,8 @@ import DownloadPage from './views/DownloadPage.vue'
 import HelpPage from './views/HelpPage.vue'
 import GettingStartedPage from './views/GettingStartedPage.vue'
 import PricingPage from './views/PricingPage.vue'
+import BlogPage from './views/BlogPage.vue'
+import BlogArticlePage from './views/BlogArticlePage.vue'
 import './styles.css'
 import './help.css'
 import './v02.css'
@@ -15,6 +17,8 @@ const routes = [
   { path: '/', component: HomePage, meta: { title: 'Vanso — Create, Publish & Distribute AI Music', description: 'Create original AI-generated music, publish your tracks and reach listeners worldwide with Vanso. Start creating or discover new music today.' } },
   { path: '/about', component: AboutPage, meta: { title: 'About Vanso — AI Music Creation, Publishing & Distribution', description: 'Learn what Vanso is, who it is for and how it connects AI music creation, publishing, distribution and listening in one platform.' } },
   { path: '/download', component: DownloadPage, meta: { title: 'Download Vanso — AI Music Creator App', description: 'Download Vanso for iOS and Android to create original AI music, publish songs and reach listeners.' } },
+  { path: '/blog', component: BlogPage, meta: { title: 'Vanso Blog | AI Music Ideas & Stories', description: 'Discover Vanso stories, AI music tutorials, and creative inspiration.' } },
+  { path: '/blog/make-your-own-ai-halloween-song', component: BlogArticlePage, meta: { title: 'Create Your Own AI Halloween Song | Vanso', description: 'Create a personalized AI Halloween song with Vanso. Turn your message into music, choose your sound, and share a spooky treat friends can play on the web.', canonical: 'https://vanso.ai/blog/make-your-own-ai-halloween-song', type: 'article' } },
   { path: '/pricing', component: PricingPage, meta: { title: 'Vanso Pricing — AI Music Plans from Free to Pro', description: 'Compare Vanso AI music plans, monthly credits, song generation limits and commercial use options. Start free or choose the right plan for your music.' } },
   { path: '/help', component: HelpPage, meta: { title: 'Vanso Help Center', description: 'Find answers about creating, publishing and managing your AI music on Vanso, plus account, rights and troubleshooting help.' } },
   { path: '/help/getting-started-with-vanso', component: GettingStartedPage, meta: { title: 'Getting Started with Vanso | Vanso Help', description: 'New to Vanso? Learn the basics of accessing the app, creating music and publishing your first track.' } },
@@ -40,6 +44,15 @@ const router = createRouter({
 router.afterEach((to) => {
   document.title = to.meta.title
   document.querySelector('meta[name="description"]')?.setAttribute('content', to.meta.description)
+  const canonical = document.querySelector('link[rel="canonical"]') || Object.assign(document.createElement('link'), { rel: 'canonical' })
+  canonical.href = to.meta.canonical || 'https://vanso.ai' + to.path
+  if (!canonical.parentNode) document.head.appendChild(canonical)
+  const properties = { 'og:title': to.meta.title, 'og:description': to.meta.description, 'og:type': to.meta.type || 'website', 'og:url': canonical.href }
+  for (const [property, content] of Object.entries(properties)) {
+    const meta = document.querySelector('meta[property="' + property + '"]') || Object.assign(document.createElement('meta'), { property })
+    meta.content = content
+    if (!meta.parentNode) document.head.appendChild(meta)
+  }
 })
 
 createApp(App).use(router).mount('#app')

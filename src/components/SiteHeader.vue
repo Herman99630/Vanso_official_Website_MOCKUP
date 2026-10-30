@@ -14,7 +14,7 @@ const open = ref(false)
       <nav :class="['nav-links', { open }]" aria-label="Primary navigation">
         <RouterLink to="/about" @click="open = false">About</RouterLink>
         <RouterLink to="/pricing" @click="open = false">Pricing</RouterLink>
-        <span class="nav-placeholder" title="Blog is planned for a later phase">Blog</span>
+        <RouterLink to="/blog" @click="open = false">Blog</RouterLink>
         <RouterLink to="/help" @click="open = false">Help</RouterLink>
       </nav>
       <div class="nav-actions">
