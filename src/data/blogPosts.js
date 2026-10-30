@@ -52,10 +52,8 @@ ${figure(step5, 'Share the finished Halloween song using Copy Link or the availa
 <p>No. You don’t need to compose music or prepare a full set of lyrics. Bring a message and choose your musical preferences—Vanso handles the AI song generation.</p>
 </section>
 <h2>Give Them Something to Play After the Candy’s Gone</h2>
-<p>Somewhere, a vampire is checking their reflection. A witch is looking for her hat. And your favorite person is still waiting for their Halloween treat.</p>
-<p>Make them something worth pressing play on.</p>
-<p><strong>Try Music Card in Vanso and create your own Halloween song.</strong></p>
-<p><strong>Download Vanso to get started.</strong></p>
+<p>Somewhere, a vampire is checking their reflection. A witch is looking for her hat. And your favorite person is still waiting for their Halloween treat.<br />Make them something worth pressing play on.</p>
+<p><strong>Try Music Card in Vanso and create your own Halloween song.<br />Download Vanso to get started.</strong></p>
 <p>Happy Halloween. 🎃</p>`
 
 export const readingMinutes = html => Math.max(1, Math.ceil(html.replace(/<[^>]*>/g, ' ').trim().split(/\s+/u).length / 200))
@@ -69,5 +67,5 @@ export const blogPosts = [{
  author: 'Herman Alexander', publishedAt: '2026-10-30',
  image: cover, alt: 'Vanso Halloween Music Card artwork with pumpkins, ghosts, musical notes and a haunted house.',
  imageWidth: 1024, imageHeight: 572, tone: 'rose', content,
- readingMinutes: readingMinutes(content), cta: 'Make Your Halloween Song Now', ctaHref: null,
+ readingMinutes: readingMinutes(content), cta: 'Make Your Halloween Song Now', ctaHref: '/download',
 }]

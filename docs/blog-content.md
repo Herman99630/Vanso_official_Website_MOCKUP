@@ -7,6 +7,6 @@ Published entries live in `src/data/blogPosts.js`. The featured entry also appea
 - Reading time is calculated from article text at 200 words/minute, rounded up (minimum one minute). Images and HTML tags do not count.
 - Article HTML is trusted repository content, never raw visitor input.
 - Halloween artwork is stored in `assets/blog/`; no temporary Feishu URLs are used.
-- The Halloween CTA deliberately has `ctaHref: null`. Set it to `/download` when approved to enable the button.
+- The Halloween CTA links to `/download`, with hover, pressed and keyboard-focus states.
 - An empty related-post list is not displayed.
 - This preview retains the existing noindex settings. Production SEO/rendering and launch configuration must be reviewed separately by H5.
