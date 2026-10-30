@@ -24,24 +24,24 @@ const content = `
 <h3>1. Choose the Halloween Music Card</h3>
 <p>Open the <strong>Music Card</strong> in the Vanso app. Select the <strong>EVENT</strong> tab, then tap <strong>Halloween</strong>.</p>
 <p>A Halloween card unfolds from its envelope, setting the mood with pumpkins, ghosts, and witchy details. The greeting shown here is a starting point for your creation—you’ll personalize it next.</p>
-${figure(step1, 'Choose Halloween in the EVENT tab and open the Halloween Music Card in Vanso.')}
+${figure(step1, 'Selecting the Halloween Music Card from the EVENT tab in Vanso.')}
 <h3>2. Write your message and choose your sound</h3>
 <p>In <strong>Who is this for?</strong>, enter your recipient’s name or nickname. Under <strong>What do you want to say?</strong>, add your Halloween greeting, joke, or message.</p>
 <p>You have up to <strong>200 characters</strong> to work with. Keep it simple and include a detail that makes it theirs.</p>
 <p>Then choose your <strong>Style</strong>, <strong>Voice</strong>, and <strong>Emotion</strong>. Explore styles such as Pop, Rock, Rap, and Latin, and try Halloween moods such as Horror, Spooky, or Dark.</p>
-${figure(step2, 'Personalize the recipient and message, then choose the song style, voice and emotion in Vanso.')}
+${figure(step2, 'Personalizing a Halloween song with recipient details, message, style, voice, and emotion.')}
 <h3>3. Create your song and give it a listen</h3>
 <p>Tap <strong>Create song</strong> when you’re ready.</p>
 <p>You’ll see a <strong>Creating your song…</strong> message while Vanso generates your track. This may take a few minutes.</p>
-${figure(step3, 'Create a personalized Halloween song and wait while Vanso generates the music.')}
+${figure(step3, 'Creating an AI Halloween song in Vanso and viewing the generation progress.')}
 <p>Once it’s ready, find your song in <strong>My Drops</strong> and press play.</p>
 <p>Hear how your message has been turned into lyrics and music. Each result can be different, so enjoy discovering where your idea takes you.</p>
-${figure(step4, 'Find the finished Halloween song in My Drops and play it in Vanso.')}
+${figure(step4, 'Opening Midnight Halloween Magic from My Drops and playing the song in Vanso.')}
 <h3>4. Share your Halloween treat</h3>
 <p>Open your finished song’s sharing options. Select <strong>Copy Link</strong>, or share through options including SMS, WhatsApp, Facebook, and X.</p>
 <p>Send it to your recipient or drop it into your Halloween group chat. They can open the link and listen on the web without installing Vanso.</p>
 <p>The Halloween card is your creative starting point; the link shares the finished song.</p>
-${figure(step5, 'Share the finished Halloween song using Copy Link or the available social sharing options.')}
+${figure(step5, 'Sharing a Halloween song through Copy Link, SMS, Facebook, WhatsApp, or X.')}
 <section class="article-faq" aria-labelledby="halloween-faqs">
 <h2 id="halloween-faqs">FAQs</h2>
 <h3>Is it free to create a Halloween song in Vanso?</h3>
@@ -65,7 +65,7 @@ export const blogPosts = [{
  metaDescription: 'Create a personalized AI Halloween song with Vanso. Turn your message into music, choose your sound, and share a spooky treat friends can play on the web.',
  excerpt: 'A little candy, a little mischief, and a song made for someone special. Meet Music Card, Vanso’s new feature, and create an AI Halloween song to share.',
  author: 'Herman Alexander', publishedAt: '2026-10-30',
- image: cover, alt: 'Vanso Halloween Music Card artwork with pumpkins, ghosts, musical notes and a haunted house.',
+ image: cover, alt: 'Vanso Halloween Music Card artwork featuring pumpkins, ghosts, musical notes, and a haunted house.',
  imageWidth: 1024, imageHeight: 572, tone: 'rose', content,
  readingMinutes: readingMinutes(content), cta: 'Make Your Halloween Song Now', ctaHref: '/download',
 }]
