@@ -16,6 +16,7 @@ import './v02.css'
 import './layout-polish.css'
 import './visual-refinements.css'
 import './about-editorial.css'
+import './blog-editorial.css'
 
 const routes = [
   { path: '/blog', component: BlogPage, meta: { title: 'Vanso Blog | Everyday Stories, Music & Ideas', description: 'Explore everyday stories, AI music ideas, and ways to create, listen, and connect on Vanso.' } },
@@ -47,8 +48,8 @@ const router = createRouter({
 
 router.afterEach((to) => {
   const post = to.path.startsWith('/blog/') && blogPosts.find(item => item.slug === to.params.slug)
-  document.title = post ? `${post.title} | Vanso Blog` : to.meta.title
-  document.querySelector('meta[name="description"]')?.setAttribute('content', post ? post.excerpt : to.meta.description)
+  document.title = post ? post.seoTitle || `${post.title} | Vanso Blog` : to.meta.title
+  document.querySelector('meta[name="description"]')?.setAttribute('content', post ? post.metaDescription || post.excerpt : to.meta.description)
 })
 
 createApp(App).use(router).mount('#app')
